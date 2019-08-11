@@ -1,0 +1,10 @@
+.login-wrapper {
+  position: absolute !important;
+  top:50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.maps-wrapper {
+	height: 45vh;
+	overflow: hidden;
+}
