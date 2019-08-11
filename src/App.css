@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.maps-wrapper {
+.maps-wrapper, .table-wrapper {
 	height: 45vh;
 	overflow: hidden;
 }
