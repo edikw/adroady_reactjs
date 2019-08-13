@@ -1,3 +1,8 @@
+.maps {
+	overflow: hidden !important;
+	height: 300px;
+}
+
 .login-wrapper {
   position: absolute !important;
   top:50% !important;

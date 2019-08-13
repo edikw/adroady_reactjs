@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { getDataChart, getDataMaps } from '../actions/getData';
 import $ from 'jquery';
 import '../App.css'
+import Maps from '../components/maps'
 
 
 class Dashboard extends Component {
@@ -23,8 +24,11 @@ class Dashboard extends Component {
 		})
 
 		this.props.getDataMaps().then( res => {
+			console.log(res.data.results)
 			this.setState({data_maps: res.data.results})
 		});
+
+
 	}
 
 	show () {
@@ -131,6 +135,9 @@ class Dashboard extends Component {
 							  </tbody>
 							</table>
 						</div>					
+					</div>
+					<div className="shadow-lg mb-5 maps">
+						<Maps map={this.state.data_maps} />
 					</div>
 				</div>
 				<div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
