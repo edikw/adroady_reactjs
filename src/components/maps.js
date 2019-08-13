@@ -1,15 +1,7 @@
 import React, {Component} from 'react';
-import $ from 'jquery';
-import { Map, GoogleApiWrapper, Marker,InfoWindow } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 class Maps extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			lang: this.props.lang,
-			lat: this.props.lat
-		}
-	}
 	displayMarkers = () => {
 		return this.props.map.map((data, index) => {
 			return <Marker key={index} id={index} position={{

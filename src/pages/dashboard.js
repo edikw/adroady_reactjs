@@ -5,7 +5,6 @@ import $ from 'jquery';
 import '../App.css'
 import Maps from '../components/maps'
 
-
 class Dashboard extends Component {
 	constructor () {
 		super() 
@@ -24,7 +23,6 @@ class Dashboard extends Component {
 		})
 
 		this.props.getDataMaps().then( res => {
-			console.log(res.data.results)
 			this.setState({data_maps: res.data.results})
 		});
 
